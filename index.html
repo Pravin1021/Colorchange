@@ -15,8 +15,9 @@
         btn.addEventListener("click",myFunc)
         function myFunc(){
             var name=document.getElementById("name")
-            var text=document.getElementById("text").value
-            name.style.color=text
+            var text=document.getElementById("text")
+            name.style.color=text.value
+            text.value=""
         }
     </script>
 </body>
