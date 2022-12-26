@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color text</title>
+</head>
+<body>
+    <input type="text" id="text" placeholder="SOME TEXT">
+    <button id="btn">CHANGE</button>
+    <h1 id="name">PRAVIN</h1>
+    <script>
+        var btn=document.getElementById("btn")
+        btn.addEventListener("click",myFunc)
+        function myFunc(){
+            var name=document.getElementById("name")
+            var text=document.getElementById("text").value
+            name.style.color=text
+        }
+    </script>
+</body>
+</html>
